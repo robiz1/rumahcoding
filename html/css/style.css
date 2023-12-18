@@ -1,0 +1,41 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    float: none;
+    text-align: center;
+    border: black solid 0px 3px;
+    background-color: brown;
+    padding: 0px
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;   
+}
+
+button {
+    background-color: blueviolet;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: yellowgreen;
+}

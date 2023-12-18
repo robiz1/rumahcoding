@@ -1,0 +1,172 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'open sans', sans-serif;
+    
+    
+    
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    background-color: wheat;
+}
+
+
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #5B0888;
+
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #5B0888;
+    width: 100%;
+    line-height: 50px;
+    margin: 15px 10px 15px 10px;
+    padding: 15px 10px 15px 10px;
+
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #5B0888;
+    width: 100%;
+    line-height: 50px;
+    margin: 15px 10px 15px 10px;
+    padding: 15px 10px 15px 10px;
+}
+
+a.tbl-biru {
+    background: #713ABE;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: blue;
+    text-decoration: none;
+
+}
+
+a.tbl-pink {
+    background: #713ABE;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #6499E9;
+    text-decoration: none;
+}
+
+p {
+    margin: 15px 10px 15px 10px;
+    padding: 15px 10px 15 10px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.foto {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-kartu {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.foto-kartu img {
+    width: 80%;
+    border-radius: 50%;
+    display: flex;
+}
+
+.foto-kartu p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+    color: black;
+    background-color: black;
+}
+@media screen and (max-width: 800px) {
+    .wrapper{
+        width: 90%;
+    }
+     
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .foto {
+        width: 50%;
+    }
+
+    .foto-kartu {
+        width: 50%;
+    }
+
+    .tengah {
+        text-align: center;
+        width: 100%;
+    }
+     
+}

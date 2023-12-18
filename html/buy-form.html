@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pembelian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<form id="purchaseForm" action="https://usebasin.com/f/71b1ec7edcba" method="post">
+    
+  <label for="productName">Nama Produk:</label>
+  <input type="text" id="productName" name="productName" required>
+
+  <label for="gmail">gmail</label>
+  <input type="email" name="gmail" required>
+
+  <label for="nomor">nomor hp:</label>
+  <input type="number" name="number" required>
+
+  <label for="quantity">Jumlah:</label>
+  <input type="number" id="quantity" name="quantity" required>
+
+  <label for="totalPrice">Total Harga:</label>
+  <input type="text" id="totalPrice" name="totalPrice" readonly>
+
+  <button type="button" onclick="calculateTotal()">Hitung Total</button>
+  <br><br>
+  <button type="submit">Beli</button>
+</form>
+
+<script>
+  function calculateTotal() {
+    var quantity = document.getElementById('quantity').value;
+    var pricePerUnit = 10000; // Ganti dengan harga per unit produk Anda
+
+    var totalPrice = quantity * pricePerUnit;
+
+    document.getElementById('totalPrice').value = totalPrice;
+  }
+</script>
+
+</body>
+</html>
